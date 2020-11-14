@@ -1,24 +1,15 @@
-const h1 = document.getElementById('main-title');
-const li = document.querySelector('li:last-of-type');
-const listItemElements = document.querySelectorAll('li');
-const body = document.body;
-const ul = document.querySelector('ul');
-const textNode = ul.childNodes[0];
+const section = document.querySelector('section');
+const button = document.querySelector('button');
 
+// section.style.backgroundColor = 'blue';
 
-h1.textContent = 'Some new title!';
-h1.style.color = 'white';
-h1.style.backgroundColor = 'black';
+section.className = 'red-bg';
 
-
-
-
-li.textContent += '(changed)';
-
-console.dir(textNode);
-
-
-
-for (const li of listItemElements) {
-    console.log(li);
-}
+button.addEventListener('click', () => {
+    // if (section.className === 'red-bg visible') {
+    //     section.className = 'red-bg invisible';
+    // } else {
+    //     section.className = 'red-bg visible';
+    // }
+    section.classList.toggle('invisible');
+});

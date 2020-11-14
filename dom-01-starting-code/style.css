@@ -12,3 +12,13 @@
 .item+.item{
     margin-left: 30px;
 }
+.red-bg{
+    background-color: red;
+    color: white; 
+}
+.visible{
+    display: block;
+}
+.invisible{
+    display: none;
+}
